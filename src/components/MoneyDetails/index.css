@@ -1,0 +1,78 @@
+/* Write your CSS here */
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.balance-container {
+  background-color: #ecfccb;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #84cc16;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.details-img {
+  height: 64px;
+  width: 64px;
+  margin: 24px;
+}
+.details-text {
+  color: #475569;
+  font-size: 12px;
+  font-family: 'roboto';
+  margin-bottom: 8px;
+}
+.details-money {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'roboto';
+}
+.income-container {
+  background-color: #cffafe;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #06b6d4;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.expenses-container {
+  background-color: #ede9fe;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #7c3aed;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .money-details-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .balance-container {
+    width: 30%;
+  }
+  .details-text {
+    font-size: 14px;
+  }
+  .details-money {
+    font-size: 24px;
+  }
+  .income-container {
+    width: 30%;
+  }
+  .expenses-container {
+    width: 30%;
+  }
+}
