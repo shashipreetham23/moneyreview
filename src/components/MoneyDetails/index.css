@@ -47,7 +47,6 @@
 .expenses-container {
   background-color: #ede9fe;
   width: 100%;
-  max-width: 200px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
