@@ -88,7 +88,7 @@ class MoneyManager extends Component {
     let incomeAmount = 0
 
     transactionsList.forEach(each => {
-      if (each.type === transactionTypeOptions[1].displayText) {
+      if (each.type === transactionTypeOptions[0].displayText) {
         incomeAmount += each.amount
       }
     })
@@ -103,9 +103,9 @@ class MoneyManager extends Component {
     let expensesAmount = 0
 
     transactionsList.forEach(each => {
-      if (each.type === transactionTypeOptions[1].displayText) {
+      if (each.type === transactionTypeOptions[0].displayText) {
         incomeAmount += each.amount
-      } else {
+      } else if (each.type === transactionTypeOptions[1].displayText) {
         expensesAmount += each.amount
       }
     })
